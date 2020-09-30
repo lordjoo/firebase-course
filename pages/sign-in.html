@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHealthy | Sign In</title>
+    <!-- Style and Fonts -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/mdb.min.css">
+    <link rel="stylesheet" href="/assets/css/moduls/animations-extended.min.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/assets/firebase.js"></script>
+
+</head>
+<body class="grey lighten-4">
+<div class="container">
+    <div class="row py-5">
+        <div class="col-md-5 m-auto">
+            <div class="card">
+                <div class="card-header bg-white text-center">
+                    <img style="height: 100px;" src="/assets/img/logo.png" alt="">
+                    <h3 class="my-2">User Login</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="nav nav-tabs text-center d-flex justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab"
+                               aria-controls="home"
+                               aria-selected="true"><span class="mdi mdi-login mr-1"></span>Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="register-tab" data-toggle="tab" href="#register" role="tab"
+                               aria-controls="profile"
+                               aria-selected="false"><span class="mdi mdi-account-plus mr-1"></span>Register</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                            <div class="md-form form-sm mb-5">
+                                <i class="mdi mdi-email prefix"></i>
+                                <input type="email" id="login_email" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="login_email">Your email</label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="mdi mdi-lock prefix"></i>
+                                <input type="password" id="login_password"
+                                       class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="login_password">Your
+                                    password</label>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-sm btn-primary shadow-none w-100">Login</button>
+                                <button class="btn btn-sm white black-text font-weight-bold w-100"><img
+                                        style="height: 15px;" class="mr-1" src="/assets/img/search.png" alt=""> Login
+                                    with Google
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Register Form -->
+                        <div class="tab-pane fade show" id="register" role="tabpanel" aria-labelledby="register-tab">
+                            <div class="md-form form-sm mb-5">
+                                <i class="mdi mdi-account prefix"></i>
+                                <input type="text" id="register_name" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="register_name">Full Name</label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="mdi mdi-email prefix"></i>
+                                <input type="email" id="register_email" class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="register_email">Your email</label>
+                            </div>
+                            <div class="md-form form-sm mb-5">
+                                <i class="mdi mdi-lock prefix"></i>
+                                <input type="password" id="register_password"
+                                       class="form-control form-control-sm validate">
+                                <label data-error="wrong" data-success="right" for="register_password">Your
+                                    password</label>
+                            </div>
+                            <div class="form-group">
+                                <button id="register_btn" class="btn btn-sm btn-primary shadow-none w-100">Register
+                                </button>
+                                <button class="btn btn-sm white black-text font-weight-bold w-100"><img
+                                        style="height: 15px;" class="mr-1" src="/assets/img/search.png" alt=""> Sign Up
+                                    with Google
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/mdb.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+<script src='/logic/auth.js'></script>
+
+</body>
+</html>

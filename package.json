@@ -1,0 +1,22 @@
+{
+  "name": "firebase-course",
+  "version": "1.0.0",
+  "description": "This repo is for Firebase Course which I'm doing with DSC MUST, <a href='https://g.co/dev/dsc'>Developer Students Club</a> (DSC) is a Google community for university students to help them improve their skills in tech field",
+  "scripts": {
+    "bundle": "browserify src/index.js --standalone firebase > assets/firebase.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lordjoo/firebase-course.git"
+  },
+  "keywords": [],
+  "author": "Youssef Mahmoud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lordjoo/firebase-course/issues"
+  },
+  "homepage": "https://github.com/lordjoo/firebase-course#readme",
+  "dependencies": {
+    "firebase": "^7.21.1"
+  }
+}
