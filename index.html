@@ -16,7 +16,7 @@
 </head>
 <body>
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-light white">
+<nav class="fixed-top navbar navbar-expand-lg navbar-light white">
 
     <div class="container"> 
   
@@ -42,22 +42,21 @@
   
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons  align-items-center">
-          <li class="nav-item avatar dropdown auth">
+          <li class="nav-item avatar dropdown is-auth">
             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-55" data-toggle="dropdown"
                aria-haspopup="true" aria-expanded="false">
-              <span class="mr-2" id="account-name">Youssef Mahmoud</span>
+              <span class="mr-2 account-name" id="account-name">Youssef Mahmoud</span>
               <img src="https://mdbootstrap.com/img/Photos/Avatars/img (1).jpg" class="rounded-circle"
                    alt="avatar image">
             </a>
             <div class="dropdown-menu dropdown-menu-lg-right dropdown-dark"
                  aria-labelledby="navbarDropdownMenuLink-55">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="#">Update Profile</a>
+              <a onclick="logOut()" class="dropdown-item">Log Out</a>
             </div>
           </li>
 
-          <li class="nav-item darken-1 no-auth">
+          <li class="nav-item darken-1 not-auth">
             <a href="/pages/sign-in.html" class="nav-link green-text waves-effect">
               <i class="mdi mdi-login"></i> Sign Up
             </a>
@@ -70,7 +69,7 @@
   
 </nav>
 <!--/.Navbar-->
-<main class="main grey lighten-4">
+<main class="main grey lighten-4 mt-5">
   
 <div class="container">
   <div class="row">
@@ -133,7 +132,7 @@
  
 </main>     
 
-<a data-toggle="modal" data-target="#addPost" type="button" class="btn-floating deep-purple waves-effect waves-light white-text text-center"><i class="mdi mdi-24px mdi-pencil-plus" aria-hidden="true"></i></a>
+<a data-toggle="modal" data-target="#addPost" type="button" class="is-auth btn-floating deep-purple waves-effect waves-light white-text text-center"><i class="mdi mdi-24px mdi-pencil-plus" aria-hidden="true"></i></a>
 
 
 <!-- Modal -->
@@ -171,6 +170,6 @@
 <script src="/assets/js/bootstrap.js"></script>
 <script src="/assets/js/mdb.js"></script>
 <script src="/assets/js/custom.js"></script>
-
+<script src="/logic/helpers.js"></script>
 </body>
 </html>
