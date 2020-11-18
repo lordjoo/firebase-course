@@ -3,3 +3,4 @@ package-lock.json
 .code
 .idea
 node_modules
+src/config.js
